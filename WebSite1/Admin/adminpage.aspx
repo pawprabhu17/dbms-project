@@ -54,11 +54,18 @@
              #header .btn:hover{
                 background-color:#021b38;
                 color:white;
-	            cursor: pointer;
+	            padding: 10px 20px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+                cursor: pointer;
+                transition: all ease-in-out 300ms;
             }
             .form-auth .btn:hover{
 	            border-color: white;
-
+                box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+                transform: translate(0px, -4px) scale(1.0);
             }
             h2{
                 color:#021b38;

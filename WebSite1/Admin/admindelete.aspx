@@ -20,10 +20,18 @@
         .btn {
             background-color:#021b38;
             color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
             cursor: pointer;
+            transition: all ease-in-out 300ms;
         }
         .btn:hover {
                color: red;
+               box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+               transform: translate(0px, -4px) scale(1.0);
         }
         .panel {
             border:2px;

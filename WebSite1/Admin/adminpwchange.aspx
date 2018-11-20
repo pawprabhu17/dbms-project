@@ -19,12 +19,19 @@
 
         .btn {
             background-color: #021b38;
+            padding: 10px 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
             cursor: pointer;
+            transition: all ease-in-out 300ms;
             color:white;
         }
         .btn:hover{
             color:white;
-            box-shadow: 1px 2px 2px #021b38;
+            box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+            transform: translate(0px, -4px) scale(1.0);            
         }
     </style>
 </head>

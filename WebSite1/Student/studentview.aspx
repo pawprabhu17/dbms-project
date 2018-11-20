@@ -23,6 +23,13 @@
         }
         .btn:hover {
                 border-color: white;
+                padding: 10px 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+      cursor: pointer;
+      transition: all ease-in-out 300ms;
         }
         h2{
                 color:#021b38;

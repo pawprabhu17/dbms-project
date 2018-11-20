@@ -20,13 +20,13 @@
         }
 
         .btn {
-            background-color: #021b38;
+            background-color: #1B5E20;
             color: white;
-            cursor: pointer;
+            cursor: pointer;            
         }
         .btn:hover {
-                border-color: white;
-                color:aliceblue;
+            color: white;
+            background-color: #021b38;
         }
         h2{
                 color:#021b38;
