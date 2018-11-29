@@ -68,7 +68,7 @@
         </div></center>
          <div class="panel" >
             <div class="panel-heading">
-                <h3 class="panel-title mb-3">Subject Code(15CS51):</h3>
+                <h3 class="panel-title mb-3">Subject 1:(15**31/41/51/61)</h3>
             </div>
              <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
             <div class="panel-body">
@@ -84,7 +84,7 @@
         </div>
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title mb-3">Subject Code(15CS52):</h3>
+                <h3 class="panel-title mb-3">Subject 2:(15**32/42/52/62)</h3>
             </div>
             <div class="panel-body">
                 <asp:CheckBoxList runat="server" ID="feedback2" OnSelectedIndexChanged="feedback2_OnSelectedIndexChanged" AutoPostBack="True">
@@ -99,7 +99,7 @@
         </div>
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title mb-3">Subject Code(15CS53):</h3>
+                <h3 class="panel-title mb-3">Subject 3:(15**33/43/53/63)</h3>
             </div>
             <div class="panel-body">
                 <asp:CheckBoxList runat="server" ID="feedback3" OnSelectedIndexChanged="feedback3_OnSelectedIndexChanged" AutoPostBack="True">
@@ -114,7 +114,7 @@
         </div>
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title mb-3">Subject Code(15CS54):</h3>
+                <h3 class="panel-title mb-3">Subject 4:(15**34/44/54/64)</h3>
             </div>
             <div class="panel-body">
                 <asp:CheckBoxList runat="server" ID="feedback4" OnSelectedIndexChanged="feedback4_OnSelectedIndexChanged" AutoPostBack="True">
@@ -129,7 +129,7 @@
         </div>
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title mb-3">Subject Code(15CS553):</h3>
+                <h3 class="panel-title mb-3">Subject 5:(15**35/45/55/65)</h3>
             </div>
             <div class="panel-body">
                 <asp:CheckBoxList runat="server" ID="feedback5" OnSelectedIndexChanged="feedback5_OnSelectedIndexChanged" AutoPostBack="True">
@@ -144,7 +144,7 @@
         </div>
         <div class="panel">
             <div class="panel-heading">
-                <h3 class="panel-title mb-3">Subject Code(15CS562/564):</h3>
+                <h3 class="panel-title mb-3">Subject 6:(15**36/46/56/66)</h3>
             </div>
             <div class="panel-body">
                 <asp:CheckBoxList runat="server" ID="feedback6" OnSelectedIndexChanged="feedback6_OnSelectedIndexChanged" AutoPostBack="True">

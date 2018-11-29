@@ -22,7 +22,7 @@
             color: white;
             padding: 10px 20px;
             margin-top: 20px;
-            margin-bottom: 20px;
+            margin-bottom: 20px;w
             border-radius: 5px;
             box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
             cursor: pointer;
@@ -105,6 +105,8 @@
                 </div>
                 <div class="form-group mt-2">
                     <asp:Button ID="ButtonDelete" runat="server" Text="Delete" class="btn" OnClick="ButtonDelete_Click"/> 
+                    <br />
+                    <asp:Label ID="Label2" runat="server" ></asp:Label>
                 </div>
                </form>
             </div>

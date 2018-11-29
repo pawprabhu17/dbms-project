@@ -24,8 +24,8 @@ public partial class studentview : System.Web.UI.Page
         {
             if (Session["usn"] != null)
             {
-                String message = "Welcome" + Session["usn"] + " to the page";
-                ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);
+                Label2.Text = Session["usn"].ToString();
+                Label2.ForeColor = System.Drawing.Color.ForestGreen;
             }            
             this.BindGrid();
         }

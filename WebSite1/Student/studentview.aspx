@@ -24,12 +24,12 @@
         .btn:hover {
                 border-color: white;
                 padding: 10px 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;
-      border-radius: 5px;
-      box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
-      cursor: pointer;
-      transition: all ease-in-out 300ms;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+                cursor: pointer;
+                transition: all ease-in-out 300ms;
         }
         h2{
                 color:#021b38;
@@ -86,8 +86,9 @@
     </nav>
     <center>
     <form id="studentfeedback" runat="server">
-    <h2 class="my-2">YOUR DETAILS<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-        </h2>
+    <h1 class="my-2">Welcome&nbsp;<asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>...</h1>
+    <br />    
+    <h2 class="my-2">YOUR DETAILS<asp:Label ID="Label1" runat="server" Text="Label"></asp:Label></h2>
     <div class="row m-3">
         <div class="col-lg-12">
             <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AllowPaging="True"
@@ -155,7 +156,7 @@
                 </asp:BoundField>
                 <asp:BoundField ItemStyle-Width="130px" DataField="marks3" HeaderText="IA3 MARKS" >
                 <ItemStyle Width="130px"></ItemStyle>
-                </asp:BoundField>
+                </asp:BoundField>                
                 <asp:BoundField ItemStyle-Width="130px" DataField="percentage" HeaderText="ATTENDANCE" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>

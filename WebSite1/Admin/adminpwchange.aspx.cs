@@ -22,7 +22,19 @@ public partial class Admin_adminpwchange : System.Web.UI.Page
         }
         Label3.Text = Session["value"].ToString();
         Label3.ForeColor = System.Drawing.Color.Green;
-    }    
+        using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo\source\repos\WebSite1\WebSite1\App_Data\studentprogress.mdf;Integrated Security=True"))
+        {
+            SqlCommand com = new SqlCommand(@"select updatedDate from [dbo].[adminpassword] where username='" + Session["value"] + "'", con);
+            con.Open();
+            SqlDataReader reader = null;
+            reader = com.ExecuteReader();
+            while (reader.Read())
+            {
+                Label4.Text = reader["updatedDate"].ToString();
+                Label4.ForeColor = System.Drawing.Color.Blue;
+            }
+        }
+    }
     protected void Button3_Click(object sender, EventArgs e)
     {
         using (SqlConnection SQLConn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo\source\repos\WebSite1\WebSite1\App_Data\studentprogress.mdf;Integrated Security=True"))
@@ -37,11 +49,24 @@ public partial class Admin_adminpwchange : System.Web.UI.Page
             }
             else
             {
-                SQLAdapter = new SqlDataAdapter("update admin set updatePwDate='"+DateTime.Now+"',password='" + TxtName2.Text + "' where username='" + Session["value"].ToString() + "'", SQLConn);
+                SQLAdapter = new SqlDataAdapter("update admin set updatePwDate='" + DateTime.Now + "',password='" + TxtName2.Text + "' where username='" + Session["value"].ToString() + "'", SQLConn);
                 SQLAdapter.Fill(DT);
                 lblMessage.Text = "Password changed successfully";
                 lblMessage.ForeColor = System.Drawing.Color.Green;
             }
         }
+        using (SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Lenovo\source\repos\WebSite1\WebSite1\App_Data\studentprogress.mdf;Integrated Security=True"))
+        {
+            SqlCommand com = new SqlCommand(@"select updatedDate from [dbo].[adminpassword] where username='" + Session["value"] + "'", con);
+            con.Open();
+            SqlDataReader reader = null;
+            reader = com.ExecuteReader();
+            while (reader.Read())
+            {
+                Label4.Text = reader["updatedDate"].ToString();
+                Label4.ForeColor = System.Drawing.Color.Blue;
+            }
+        }
+
     }
 }

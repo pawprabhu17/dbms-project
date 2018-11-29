@@ -54,13 +54,7 @@
              #header .btn:hover{
                 background-color:#021b38;
                 color:white;
-	            padding: 10px 20px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                border-radius: 5px;
-                box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
-                cursor: pointer;
-                transition: all ease-in-out 300ms;
+	            
             }
             .form-auth .btn:hover{
 	            border-color: white;
@@ -118,12 +112,15 @@
             </div>
         </nav>
 
-        
-
+    <center>    
+        <h1>WELCOME&nbsp;<asp:Label ID="Label3" runat="server" Text="Label"></asp:Label>&nbsp;TO THE PAGE!</h1>
+    </center>
+    <br />
     <div class="row">
         <div class="col-lg-3 m-3">
-            <center>
-             <ul class="buttons" style="list-style:none;">
+            <center>                
+             <ul class="buttons" style="list-style:none;">                 
+                 <li></li>
                  <li><a style="text-decoration-line:none;color:white;"><button class="btn m-2" data-toggle="collapse" data-target="#insert">INSERT RECORDS</button></a></li>
                  <li><a href="http://localhost:61655/Admin/adminview.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2 px-3" >VIEW RECORDS</button></a></li>
                  <li><a href="http://localhost:61655/Admin/admindelete.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2">DELETE RECORDS</button></a></li>
@@ -148,8 +145,8 @@
                     <hr class="m-0 p-0" width="50%"/>
                     <div class="card-body">
                        <form class="form-auth" method="post" runat="server">
-                        <h2>Enter Student Details:<asp:Label ID="Label2" runat="server"></asp:Label>
-                           </h2>
+                           <h3>Enter Student Details:<asp:Label ID="Label2" runat="server"></asp:Label>
+                           </h3>
                          <br />
                          <div class="form-group" id="geninfo">
                            <asp:TextBox ID="usn" class="form-control" runat="server" Height="40px"  placeholder="USN"></asp:TextBox>

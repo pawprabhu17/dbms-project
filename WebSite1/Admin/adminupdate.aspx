@@ -91,22 +91,22 @@
                 <asp:BoundField ItemStyle-Width="130px" DataField="Usn" HeaderText="USN" > 
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
-                <asp:BoundField ItemStyle-Width="130px" DataField="15cs51" HeaderText="15CS51 FEEDBACK" >
+                <asp:BoundField ItemStyle-Width="130px" DataField="15cs51" HeaderText="SUBJECT1 FEEDBACK" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
-                <asp:BoundField ItemStyle-Width="130px" DataField="15cs52" HeaderText="15CS52 FEEDBACK" >
+                <asp:BoundField ItemStyle-Width="130px" DataField="15cs52" HeaderText="SUBJECT2 FEEDBACK" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
-                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs53" HeaderText="15CS53 FEEDBACK" >
+                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs53" HeaderText="SUBJECT3 FEEDBACK" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
-                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs54" HeaderText="15CS54 FEEDBACK" >
+                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs54" HeaderText="SUBJECT4 FEEDBACK" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
-                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs553" HeaderText="15CS553 FEEDBACK" >
+                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs553" HeaderText="SUBJECT5 FEEDBACK" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
-                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs562/564" HeaderText="15CS562/564 FEEDBACK" >
+                 <asp:BoundField ItemStyle-Width="130px" DataField="15cs562/564" HeaderText="SUBJECT6 FEEDBACK" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
 

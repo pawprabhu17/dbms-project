@@ -13,8 +13,8 @@ public partial class adminpage : System.Web.UI.Page
     {
         try
         {
-              String message = "Welcome " + Session["value"] + " to the page";
-              ClientScript.RegisterStartupScript(GetType(), "alert", "alert('" + message + "');", true);            
+              Label3.Text = Session["value"].ToString();
+              Label3.ForeColor = System.Drawing.Color.ForestGreen;
               Label2.Text = Session["value"].ToString();
               Label2.Visible = false;            
         }
