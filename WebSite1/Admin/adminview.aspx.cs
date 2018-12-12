@@ -60,7 +60,7 @@ public partial class adminview : System.Web.UI.Page
                     }
                 }
             }
-            using (SqlCommand cmd2 = new SqlCommand("Select * from course ORDER BY usn,subject_code"))
+            using (SqlCommand cmd2 = new SqlCommand("Select * from course ORDER BY subject_code"))
             {
                 using (SqlDataAdapter sda2 = new SqlDataAdapter())
                 {

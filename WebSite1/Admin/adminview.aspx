@@ -159,10 +159,7 @@
                 </asp:BoundField>
                 <asp:BoundField ItemStyle-Width="130px" DataField="subject_name" HeaderText="SUB NAME" >
 <ItemStyle Width="130px"></ItemStyle>
-                </asp:BoundField>
-                <asp:BoundField ItemStyle-Width="130px" DataField="Usn" HeaderText="USN" >
-<ItemStyle Width="130px"></ItemStyle>
-                </asp:BoundField>
+                </asp:BoundField>                
             </Columns>
                 <FooterStyle BackColor="#CCCCCC" ForeColor="Black" />
                 <HeaderStyle BackColor="#021b38" Font-Bold="True" ForeColor="White" />
@@ -195,6 +192,9 @@
 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
                 <asp:BoundField ItemStyle-Width="130px" DataField="marks3" HeaderText="IA3 MARKS" >                
+<ItemStyle Width="130px"></ItemStyle>
+                </asp:BoundField>
+                <asp:BoundField ItemStyle-Width="130px" DataField="finalia" HeaderText="FINALIA MARKS" >                
 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
             </Columns>

@@ -50,7 +50,7 @@ public partial class studentview : System.Web.UI.Page
                     }
                 }
             }
-            using (SqlCommand cmd1 = new SqlCommand("SELECT c.subject_code,c.subject_name,e.marks1,e.marks2,e.marks3,a.percentage FROM course c,exam e,attendance a where c.usn='" + Session["usn"] + "'and c.subject_code=e.subject_code and e.usn='" + Session["usn"] + "' and c.subject_code=a.subject_code and a.usn='" + Session["usn"] + "'ORDER BY c.subject_code"))
+            using (SqlCommand cmd1 = new SqlCommand("SELECT c.subject_code,c.subject_name,e.marks1,e.marks2,e.marks3,e.finalia,a.percentage,(case when a.percentage between 85 and 100 then 'EXCELLENT' when a.percentage between 75 and 85 then 'NEEDS IMPROVEMENT' else 'SHORTAGE' end)as remarks FROM course c,exam e,attendance a where c.subject_code=e.subject_code and e.usn='" + Session["usn"] + "' and c.subject_code=a.subject_code and a.usn='" + Session["usn"] + "'ORDER BY c.subject_code"))
             {
                 using (SqlDataAdapter sda1 = new SqlDataAdapter())
                 {

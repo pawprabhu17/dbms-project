@@ -156,8 +156,14 @@
                 </asp:BoundField>
                 <asp:BoundField ItemStyle-Width="130px" DataField="marks3" HeaderText="IA3 MARKS" >
                 <ItemStyle Width="130px"></ItemStyle>
-                </asp:BoundField>                
+                </asp:BoundField>    
+                <asp:BoundField ItemStyle-Width="130px" DataField="finalia" HeaderText="FINALIA MARKS" >
+                <ItemStyle Width="130px"></ItemStyle>
+                </asp:BoundField>   
                 <asp:BoundField ItemStyle-Width="130px" DataField="percentage" HeaderText="ATTENDANCE" >
+                <ItemStyle Width="130px"></ItemStyle>
+                </asp:BoundField>
+                <asp:BoundField ItemStyle-Width="130px" DataField="remarks" HeaderText="ATTENDANCE REMARKS" >
                 <ItemStyle Width="130px"></ItemStyle>
                 </asp:BoundField>
             </Columns>
