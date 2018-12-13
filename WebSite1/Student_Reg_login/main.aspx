@@ -16,6 +16,9 @@
             {
 	            margin:0;
 	            padding: 0;
+                background-image:url("http://localhost:61655/Images/ground.jpg");
+                background-size:cover;
+                background-repeat:no-repeat;
             }
             .form-auth {
 	            border:2px solid gray;

@@ -10,9 +10,17 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style type="text/css">
+        body{
+            margin:0;
+            padding:0;
+            background-image:url("http://localhost:61655/Images/ground.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;  
+        }
         .panel {
             width: 600px;
             margin: 0 auto;
+            background-color:white;
         }
 
         .btn {
@@ -28,7 +36,7 @@
 </head>
 <body>
     <br />
-    <h3 align="center">Register Page For Students</h3>
+    <h2 align="center">Register Page For Students</h2>
     <br />
     <div>
         <div class="panel panel-default">
@@ -61,7 +69,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" AllowPaging="True"
-                OnPageIndexChanging="OnPageIndexChanging" CellPadding="10" ForeColor="#333333" GridLines="None" Width="302px">
+                OnPageIndexChanging="OnPageIndexChanging" CellPadding="10" ForeColor="#333333" GridLines="None" Width="489px">
                     <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
                 <Columns>
                     <asp:BoundField ItemStyle-Width="130px" DataField="usn" HeaderText="USN" >

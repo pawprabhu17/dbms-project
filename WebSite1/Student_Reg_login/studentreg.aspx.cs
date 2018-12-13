@@ -98,4 +98,9 @@ public partial class studentreg : System.Web.UI.Page
         }
         return new string(chars);
     }
+
+    protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+    {
+
+    }
 }

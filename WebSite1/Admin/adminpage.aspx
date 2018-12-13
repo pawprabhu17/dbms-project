@@ -11,20 +11,25 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
         <style type="text/css">
             body
             {
 	            margin:0;
-	            padding: 0;
+                padding:0;
+                background-image:url("http://localhost:61655/Images/ground.jpg");
+                background-size:cover;
+                background-repeat:no-repeat;              
+               
             }
             .form-auth {
-	            border:2px solid gray;
-	            background-color: #E0E0E0;
+	            border:2px solid black;	             
                 max-width:570px;
 	            padding: 3%;
 	            margin: 0 auto;
+                background-color:gainsboro;
             }
-            .card .btn, .form-auth .btn,#insert .btn{
+             .btn, .form-auth .btn,#insert .btn{
                 background-color: #021b38;
 	            color:white;
 	            cursor: pointer;
@@ -64,7 +69,16 @@
             h2{
                 color:#021b38;
             }
-                      
+            #Tabs .btn{                
+                width: 77px;
+                border-radius:0px;
+                border : 1px solid black;
+                margin:auto;
+            }
+            #Tabs a{
+                color:white;
+                text-decoration:none;
+            }            
         </style>
 </head>
 <body>
@@ -133,200 +147,198 @@
       <div class="collapse show" id="insert">
         <div class="container">       
             <div class="col-lg-12 m-3">
-               <center>
-                <div class="card p-0">
-                   <div class="card-header bg-secondary" id="header" align="center">
-                     <a href="#geninfo"><button class="btn ">GENERAL INFO</button></a>
-                     <a href="#subject"><button class="btn ">COURSE</button></a>
-                     <a href="#section"><button class="btn ">SECTION</button></a>
-                     <a href="#marks"><button class="btn ">MARKS</button></a>
-                     <a href="#attendances"><button class="btn ">ATTENDANCE</button></a>
-                   </div>
-                    <hr class="m-0 p-0" width="50%"/>
-                    <div class="card-body">
+               <center>                  
+                       
+                   <div class="panel panel-default" style="width: 560px; padding: 10px; margin: 10px 10px 10px 0px">
+                            <div id="Tabs" role="tabpanel">
+                                <!-- Nav tabs -->
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li class="active"><a href="#general" aria-controls="general" role="tab" data-toggle="tab"><button class="btn">General</button></a></li>
+                                    <li><a href="#subject1" aria-controls="subject1" role="tab" data-toggle="tab"><button class="btn ">Sub1</button></a></li>
+                                    <li><a href="#subject2" aria-controls="subject2" role="tab" data-toggle="tab"><button class="btn ">Sub2</button></a></li>
+                                    <li><a href="#subject3" aria-controls="subject3" role="tab" data-toggle="tab"><button class="btn ">Sub3</button></a></li>
+                                    <li><a href="#subject4" aria-controls="subject4" role="tab" data-toggle="tab"><button class="btn ">Sub4</button></a></li>
+                                    <li><a href="#subject5" aria-controls="subject5" role="tab" data-toggle="tab"><button class="btn ">Sub5</button></a></li>
+                                    <li><a href="#subject6" aria-controls="subject6" role="tab" data-toggle="tab"><button class="btn ">Sub6</button></a></li>
+                                </ul>
+                             </div>                                      
                        <form class="form-auth" method="post" runat="server">
-                           <h3>Enter Student Details:<asp:Label ID="Label2" runat="server"></asp:Label>
-                           </h3>
-                         <br />
-                         <div class="form-group" id="geninfo">
-                           <asp:TextBox ID="usn" class="form-control" runat="server" Height="40px"  placeholder="USN"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                           <asp:TextBox ID="studname" class="form-control" runat="server" Height="40px"  placeholder="Student Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                            <asp:TextBox ID="phonenum" class="form-control" runat="server" Height="40px"  placeholder="Phone Number"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                             <asp:TextBox ID="gender" class="form-control" runat="server" Height="40px"  placeholder="Gender"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                              <asp:TextBox ID="address" class="form-control" runat="server" Height="40px"  placeholder="Address"></asp:TextBox>
-                          </div>
-                         <div class="form-group">
-                               <asp:TextBox ID="department" class="form-control" runat="server" Height="40px"  placeholder="Department"></asp:TextBox>
-                         </div>
-                         <div class="form-group" id="section">
-                               <asp:TextBox ID="sectionid" class="form-control" runat="server" Height="40px"  placeholder="Section ID"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                               <asp:TextBox ID="sem" class="form-control" runat="server" Height="40px"  placeholder="Semester"></asp:TextBox>
-                         </div>
-                          <div class="form-group">
-                               <asp:TextBox ID="sec" class="form-control" runat="server" Height="40px"  placeholder="Section"></asp:TextBox>
-                         </div>
-                        <br />
-                           <h2>Enter I Subject Details:</h2>
-                        <br />
+                        <div class="tab-content" style="padding-top: 20px">
+                            <div role="tabpanel" class="tab-pane active" id="general">                                 
+                                   <h2>Enter Student Details:<asp:Label ID="Label2" runat="server"></asp:Label></h2>
+                                 <br />
+                                 <div class="form-group" id="geninfo">
+                                   <asp:TextBox ID="usn" class="form-control" runat="server" Height="40px"  placeholder="USN"></asp:TextBox>
+                                 </div>
+                                 <div class="form-group">
+                                   <asp:TextBox ID="studname" class="form-control" runat="server" Height="40px"  placeholder="Student Name"></asp:TextBox>
+                                 </div>
+                                 <div class="form-group">
+                                    <asp:TextBox ID="phonenum" class="form-control" runat="server" Height="40px"  placeholder="Phone Number"></asp:TextBox>
+                                 </div>
+                                 <div class="form-group">
+                                     <asp:TextBox ID="gender" class="form-control" runat="server" Height="40px"  placeholder="Gender"></asp:TextBox>
+                                 </div>
+                                 <div class="form-group">
+                                      <asp:TextBox ID="address" class="form-control" runat="server" Height="40px"  placeholder="Address"></asp:TextBox>
+                                  </div>
+                                 <div class="form-group">
+                                       <asp:TextBox ID="department" class="form-control" runat="server" Height="40px"  placeholder="Department"></asp:TextBox>
+                                 </div>
+                                 <div class="form-group" id="section">
+                                       <asp:TextBox ID="sectionid" class="form-control" runat="server" Height="40px"  placeholder="Section ID"></asp:TextBox>
+                                 </div>
+                                 <div class="form-group">
+                                       <asp:TextBox ID="sem" class="form-control" runat="server" Height="40px"  placeholder="Semester"></asp:TextBox>
+                                 </div>
+                                  <div class="form-group">
+                                       <asp:TextBox ID="sec" class="form-control" runat="server" Height="40px"  placeholder="Section"></asp:TextBox>
+                                 </div>                                
+                        </div>
 
-                         <div class="form-group" id="subject">
-                                   <asp:TextBox ID="subcode1" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                        <div role="tabpanel" class="tab-pane" id="subject1">                           
+                             <h2>Enter I Subject Details:</h2><br />                         
+                             <div class="form-group" id="subject">
+                                       <asp:TextBox ID="subcode1" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="subname1" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
+                             </div>
+                             <div class="form-group" id="marks">
+                                       <asp:TextBox ID="marks11" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                    <asp:TextBox ID="marks12" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks13" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
+                             </div>
+                             <div class="form-group" id="attendances">
+                                       <asp:TextBox ID="attendance1" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
+                             </div>   
                          </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="subname1" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group" id="marks">
-                                   <asp:TextBox ID="marks11" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                <asp:TextBox ID="marks12" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks13" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
-                         </div>
-                         <div class="form-group" id="attendances">
-                                   <asp:TextBox ID="attendance1" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
-                         </div>                          
-                         <br />
-                           <h2>Enter II Subject Details:</h2>
-                         <br />
 
-                         <div class="form-group">
-                                   <asp:TextBox ID="subcode2" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                         <div role="tabpanel" class="tab-pane" id="subject2">                            
+                               <h2>Enter II Subject Details:</h2><br />
+                               <div class="form-group">
+                                       <asp:TextBox ID="subcode2" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                               </div>
+                               <div class="form-group">
+                                       <asp:TextBox ID="subname2" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
+                               </div>
+                               <div class="form-group">
+                                       <asp:TextBox ID="marks21" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
+                               </div>
+                               <div class="form-group">
+                                    <asp:TextBox ID="marks22" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
+                               </div>
+                               <div class="form-group">
+                                       <asp:TextBox ID="marks23" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
+                               </div>
+                               <div class="form-group">
+                                       <asp:TextBox ID="attendance2" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
+                               </div>      
                          </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="subname2" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks21" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                <asp:TextBox ID="marks22" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks23" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="attendance2" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
-                         </div>                        
-                         <br />
-                           <h2>Enter III Subject Details:</h2>
-                        <br />
 
-                        
-                         <div class="form-group">
-                                   <asp:TextBox ID="subcode3" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="subname3" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks31" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                <asp:TextBox ID="marks32" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks33" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="attendance3" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
-                         </div>
-                        <br />
-                           <h2>Enter IV Subject Details:</h2>
-                        <br />
+                         <div role="tabpanel" class="tab-pane " id="subject3">                            
+                               <h2>Enter III Subject Details:</h2><br />                        
+                             <div class="form-group">
+                                       <asp:TextBox ID="subcode3" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="subname3" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks31" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                    <asp:TextBox ID="marks32" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks33" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="attendance3" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
+                             </div>
+                        </div>
 
-                        
-                         <div class="form-group">
-                                   <asp:TextBox ID="subcode4" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="subname4" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks41" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                <asp:TextBox ID="marks42" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks43" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="attendance4" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
-                         </div>
-                         <br />
-                           <h2>Enter V Subject Details:</h2>
-                        <br />
+                        <div role="tabpanel" class="tab-pane" id="subject4">                            
+                             <h2>Enter IV Subject Details:</h2><br />                        
+                             <div class="form-group">
+                                       <asp:TextBox ID="subcode4" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="subname4" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks41" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                    <asp:TextBox ID="marks42" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks43" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="attendance4" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
+                             </div>
+                        </div>
 
-                        
-                         <div class="form-group">
-                                   <asp:TextBox ID="subcode5" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="subname5" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks51" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                <asp:TextBox ID="marks52" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks53" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="attendance5" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
-                         </div>
-                        <br />
-                           <h2>Enter VI Subject Details:</h2>
-                        <br />
+                        <div role="tabpanel" class="tab-pane" id="subject5">                             
+                             <h2>Enter V Subject Details:</h2><br />                        
+                             <div class="form-group">
+                                       <asp:TextBox ID="subcode5" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="subname5" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks51" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                    <asp:TextBox ID="marks52" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks53" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="attendance5" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
+                             </div>
+                        </div>
 
-
-
-
-                         <div class="form-group">
-                                   <asp:TextBox ID="subcode6" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="subname6" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks61" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                <asp:TextBox ID="marks62" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="marks63" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
-                         </div>
-                         <div class="form-group">
-                                   <asp:TextBox ID="attendance6" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
-                         </div>
-                         <br />
-                         
-                         <div class="form-group" align="center">
-                            <asp:Button ID="Button3" runat="server" Text="Insert" class="btn" OnClick="Button3_Click"/>    
-                              <br />
-                            <asp:Label ID="Label1" runat="server"></asp:Label>
-                         </div>                        
-                       </form>                          
-                    </div>
-                   </div>
-                 </center>                  
+                        <div role="tabpanel" class="tab-pane" id="subject6">                           
+                             <h2>Enter VI Subject Details:</h2><br />
+                             <div class="form-group">
+                                       <asp:TextBox ID="subcode6" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="subname6" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks61" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                    <asp:TextBox ID="marks62" class="form-control" runat="server" Height="40px"  placeholder="IA Marks2"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="marks63" class="form-control" runat="server" Height="40px"  placeholder="IA Marks3"></asp:TextBox>
+                             </div>
+                             <div class="form-group">
+                                       <asp:TextBox ID="attendance6" class="form-control" runat="server" Height="40px"  placeholder="Attendance"></asp:TextBox>
+                             </div>
+                             <br />                         
+                             <div class="form-group" align="center">
+                                <asp:Button ID="Button3" runat="server" Text="Insert" class="btn" OnClick="Button3_Click"/>    
+                                  <br />
+                                <asp:Label ID="Label1" runat="server"></asp:Label>
+                             </div>   
+                       </div>
+                     </div>                                      
+                </form>   
                </div>
-             </div> 
-           </div>
+              </center>                  
+             </div>
+           </div>          
          </div>
 
         

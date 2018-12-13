@@ -15,6 +15,9 @@
         body {
             margin: 0;
             padding: 0;
+            background-image:url("http://localhost:61655/Images/farm.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;  
         }
 
         .btn {
@@ -37,6 +40,9 @@
             border:2px;
             width: 600px;
             margin: 0 auto;
+            background-color:floralwhite;
+            padding:2%;
+            border-radius:7px;
         }
         
         
