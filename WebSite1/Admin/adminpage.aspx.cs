@@ -43,8 +43,7 @@ public partial class adminpage : System.Web.UI.Page
                     cmd.Parameters.AddWithValue("@semester", sem.Text);
                     cmd.Parameters.AddWithValue("@section", sec.Text);
 
-                    cmd.Parameters.AddWithValue("@subject_code1", subcode1.Text);
-                    cmd.Parameters.AddWithValue("@subject_name1", subname1.Text);
+                    cmd.Parameters.AddWithValue("@subject_code1", subcode1.Text);                    
                     cmd.Parameters.AddWithValue("@marks11", marks11.Text);
                     cmd.Parameters.AddWithValue("@marks12", marks12.Text);
                     cmd.Parameters.AddWithValue("@marks13", marks13.Text);
@@ -52,14 +51,12 @@ public partial class adminpage : System.Web.UI.Page
                     
 
                     cmd.Parameters.AddWithValue("@subject_code2", subcode2.Text);
-                    cmd.Parameters.AddWithValue("@subject_name2", subname2.Text);
                     cmd.Parameters.AddWithValue("@marks21", marks21.Text);
                     cmd.Parameters.AddWithValue("@marks22", marks22.Text);
                     cmd.Parameters.AddWithValue("@marks23", marks23.Text);
                     cmd.Parameters.AddWithValue("@percentage2", attendance2.Text);
                    
                     cmd.Parameters.AddWithValue("@subject_code3", subcode3.Text);
-                    cmd.Parameters.AddWithValue("@subject_name3", subname3.Text);
                     cmd.Parameters.AddWithValue("@marks31", marks31.Text);
                     cmd.Parameters.AddWithValue("@marks32", marks32.Text);
                     cmd.Parameters.AddWithValue("@marks33", marks33.Text);
@@ -67,7 +64,6 @@ public partial class adminpage : System.Web.UI.Page
                     
 
                     cmd.Parameters.AddWithValue("@subject_code4", subcode4.Text);
-                    cmd.Parameters.AddWithValue("@subject_name4", subname4.Text);
                     cmd.Parameters.AddWithValue("@marks41", marks41.Text);
                     cmd.Parameters.AddWithValue("@marks42", marks42.Text);
                     cmd.Parameters.AddWithValue("@marks43", marks43.Text);
@@ -75,7 +71,6 @@ public partial class adminpage : System.Web.UI.Page
                    
 
                     cmd.Parameters.AddWithValue("@subject_code5", subcode5.Text);
-                    cmd.Parameters.AddWithValue("@subject_name5", subname5.Text);
                     cmd.Parameters.AddWithValue("@marks51", marks51.Text);
                     cmd.Parameters.AddWithValue("@marks52", marks52.Text);
                     cmd.Parameters.AddWithValue("@marks53", marks53.Text);
@@ -83,7 +78,6 @@ public partial class adminpage : System.Web.UI.Page
                    
 
                     cmd.Parameters.AddWithValue("@subject_code6", subcode6.Text);
-                    cmd.Parameters.AddWithValue("@subject_name6", subname6.Text);
                     cmd.Parameters.AddWithValue("@marks61", marks61.Text);
                     cmd.Parameters.AddWithValue("@marks62", marks62.Text);
                     cmd.Parameters.AddWithValue("@marks63", marks63.Text);

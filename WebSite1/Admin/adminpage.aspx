@@ -135,6 +135,7 @@
             <center>                
              <ul class="buttons" style="list-style:none;">                 
                  <li></li>
+                 <li><a href="http://localhost:61655/Admin/adminsubjects.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2">SUBJECTS</button></a></li>
                  <li><a style="text-decoration-line:none;color:white;"><button class="btn m-2" data-toggle="collapse" data-target="#insert">INSERT RECORDS</button></a></li>
                  <li><a href="http://localhost:61655/Admin/adminview.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2 px-3" >VIEW RECORDS</button></a></li>
                  <li><a href="http://localhost:61655/Admin/admindelete.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2">DELETE RECORDS</button></a></li>
@@ -200,10 +201,7 @@
                              <h2>Enter I Subject Details:</h2><br />                         
                              <div class="form-group" id="subject">
                                        <asp:TextBox ID="subcode1" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                             </div>
-                             <div class="form-group">
-                                       <asp:TextBox ID="subname1" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                             </div>
+                             </div>                            
                              <div class="form-group" id="marks">
                                        <asp:TextBox ID="marks11" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
                              </div>
@@ -222,10 +220,7 @@
                                <h2>Enter II Subject Details:</h2><br />
                                <div class="form-group">
                                        <asp:TextBox ID="subcode2" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                               </div>
-                               <div class="form-group">
-                                       <asp:TextBox ID="subname2" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                               </div>
+                               </div>                               
                                <div class="form-group">
                                        <asp:TextBox ID="marks21" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
                                </div>
@@ -244,10 +239,7 @@
                                <h2>Enter III Subject Details:</h2><br />                        
                              <div class="form-group">
                                        <asp:TextBox ID="subcode3" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                             </div>
-                             <div class="form-group">
-                                       <asp:TextBox ID="subname3" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                             </div>
+                             </div>                             
                              <div class="form-group">
                                        <asp:TextBox ID="marks31" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
                              </div>
@@ -266,9 +258,6 @@
                              <h2>Enter IV Subject Details:</h2><br />                        
                              <div class="form-group">
                                        <asp:TextBox ID="subcode4" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                             </div>
-                             <div class="form-group">
-                                       <asp:TextBox ID="subname4" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
                              </div>
                              <div class="form-group">
                                        <asp:TextBox ID="marks41" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
@@ -290,9 +279,6 @@
                                        <asp:TextBox ID="subcode5" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
                              </div>
                              <div class="form-group">
-                                       <asp:TextBox ID="subname5" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
-                             </div>
-                             <div class="form-group">
                                        <asp:TextBox ID="marks51" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
                              </div>
                              <div class="form-group">
@@ -310,9 +296,6 @@
                              <h2>Enter VI Subject Details:</h2><br />
                              <div class="form-group">
                                        <asp:TextBox ID="subcode6" class="form-control" runat="server" Height="40px"  placeholder="Subject Code "></asp:TextBox>
-                             </div>
-                             <div class="form-group">
-                                       <asp:TextBox ID="subname6" class="form-control" runat="server" Height="40px"  placeholder="Subject Name"></asp:TextBox>
                              </div>
                              <div class="form-group">
                                        <asp:TextBox ID="marks61" class="form-control" runat="server" Height="40px"  placeholder="IA Marks1"></asp:TextBox>
