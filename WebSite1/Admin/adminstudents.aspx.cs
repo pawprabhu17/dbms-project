@@ -23,10 +23,10 @@ public partial class Admin_adminstudents : System.Web.UI.Page
 
     protected void Button1_Click(object sender, EventArgs e)
     {
-        int usnId = 0;
+        int subId = 0;
         using (SqlConnection con = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Lenovo\source\repos\WebSite1\WebSite1\App_Data\studentprogress.mdf; Integrated Security = True"))
         {
-            using (SqlCommand cmd = new SqlCommand("subject_insert"))
+            using (SqlCommand cmd = new SqlCommand("subjects_insert"))
             {
                 using (SqlDataAdapter sda = new SqlDataAdapter())
                 {
@@ -35,18 +35,16 @@ public partial class Admin_adminstudents : System.Web.UI.Page
                     cmd.Parameters.AddWithValue("@subject_name", TxtName2.Text);
                     cmd.Connection = con;
                     con.Open();
-                    object result = cmd.ExecuteScalar();
-                    result = (result == DBNull.Value) ? null : result;
-                    usnId = Convert.ToInt32(result);
+                    subId = Convert.ToInt32(cmd.ExecuteScalar());
                     con.Close();
                 }
             }
             string message = string.Empty;
             Boolean flag = false;
-            switch (usnId)
+            switch (subId)
             {
                 case -1:
-                    message = "Record of this Subject already exists.\\nPlease choose a different usn.";
+                    message = "Record of this Subject already exists.\\nPlease choose a different subject.";
                     break;
                 default:
                     flag = true;
@@ -58,4 +56,5 @@ public partial class Admin_adminstudents : System.Web.UI.Page
                 Response.Redirect("http://localhost:61655/Admin/adminstudents.aspx");
             }
         }
+    }
 }

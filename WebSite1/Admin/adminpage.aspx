@@ -135,7 +135,7 @@
             <center>                
              <ul class="buttons" style="list-style:none;">                 
                  <li></li>
-                 <li><a href="http://localhost:61655/Admin/adminsubjects.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2">SUBJECTS</button></a></li>
+                 <li><a href="http://localhost:61655/Admin/adminstudents.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2">SUBJECTS</button></a></li>
                  <li><a style="text-decoration-line:none;color:white;"><button class="btn m-2" data-toggle="collapse" data-target="#insert">INSERT RECORDS</button></a></li>
                  <li><a href="http://localhost:61655/Admin/adminview.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2 px-3" >VIEW RECORDS</button></a></li>
                  <li><a href="http://localhost:61655/Admin/admindelete.aspx" style="text-decoration-line:none;color:white;"><button class="btn m-2">DELETE RECORDS</button></a></li>

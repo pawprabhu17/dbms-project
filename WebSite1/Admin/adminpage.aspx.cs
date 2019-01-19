@@ -13,7 +13,7 @@ public partial class adminpage : System.Web.UI.Page
     {
         try
         {
-              Label3.Text = Session["value"].ToString();
+              Label3.Text = Session["value"].ToString().ToUpper();
               Label3.ForeColor = System.Drawing.Color.ForestGreen;
               Label2.Text = Session["value"].ToString();
               Label2.Visible = false;            
